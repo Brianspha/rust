@@ -62,7 +62,7 @@ pub fn get_start_sub_list_index<T: PartialEq + std::clone::Clone + std::fmt::Deb
         // last indices of bigger_list are too far right to get a match
         let mut j = 0;
         while j < smaller_list.len() {
-            // check every char of needle
+            // check every element within the smaller list
             if smaller_list[j] != bigger_list[i + j] {
                 // doesn't match
                 break; // try the next i
